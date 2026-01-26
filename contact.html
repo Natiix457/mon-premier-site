@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <body>
+                <h1>Contactez-nous</h1>
+
+            <form>
+                <label><strong>Information personelles</strong></label><br><br>
+                <label for="lastname-id">Nom *</label>
+                <input type="text" id="lastname-id" name="lastname" required maxlength="32"><br>
+
+                <br><label for="firstname-id">Prénom *</label>
+                <input type="text" id="firstname-id" name="firstname" required maxlength="32"><br>
+
+                <br><label for="email-id">Adresse email *</label>
+                <input type="email" id="email-id" name="email" required maxlength="50"><br>
+
+                <br><label for="adress-id">Adresse </label>
+                <input type="text" id="adress-id" name="adress" maxlength="36"><br>
+
+                <br><label for="lieu-id">Lieu </label>
+                <input type="text" id="lieu-id" name="lieu" maxlength="40"><br>
+
+                <br><label for="npa-id">N° postale (NPA) </label>
+                <input type="text" id="npa-id" name="npa" maxlength="10"><br>
+
+                <br>--------------------------------------------------------------------
+
+                <br><br><label><strong>Nos produits</strong></label>
+                
+                <br><br><input type="checkbox" name="produit[]" value="CompteRLMaxRank"> Compte classé rang max<br>
+                <input type="checkbox" name="produit[]" value="CompteRLAllItem"> Compte avec tous les items<br>
+                <input type="checkbox" name="produit[]" value="CompteRLRocketPass"> Compte ayant tous les Rocket Pass seulement<br>
+
+                <br><br><input type="radio" name="quantité" value="d">Quantité
+                <select name="Quantité">
+                    <option name="quantité" value="Choix du nombre">--Choisissez--</option>
+                    <option name="quantité" value="1">1x</option>
+                    <option name="quantité" value="2">2x</option>
+                </select>
+                <br><input type="radio" name="quantité" value="d">Quantité personnalisé <input type="number" min="3" max="10"><br>
+
+                <br>--------------------------------------------------------------------
+
+                <br><br><label><strong>Mode de paiement</strong></label>
+                <br><br><input type="radio" name="modepaiement" value="cartebancaire">Carte Bancaire
+                <br><input type="radio" name="modepaiement" value="twint">Twint
+
+                <br>--------------------------------------------------------------------
+
+                <label for="message-id"></label>
+                <br><br><br>Message (optionnel)
+                <br><textarea rows="10" cols="50" id="message-id" name="message" maxlength="510"></textarea>
+
+                <br><br><br><input type="checkbox" name="conditionsgénérales[]" value="conditionsgénérales" required> J'accepte les conditions générales *
+
+                <br><br><input type="submit" value="Envoyer">
+            </form>
+
+
+
+        </body>
+    </head>
+</html>
