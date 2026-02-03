@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <a link href="/index.html">Accueil</a>
         <body>
                 <h1>Contactez-nous</h1>
 
             <form>
                 <label><strong>Information personelles</strong></label><br><br>
                 <label for="lastname-id">Nom *</label>
-                <input type="text" id="lastname-id" name="lastname" required maxlength="32"><br>
+                <input type="text" id="lastname-id" name="lastname" required minlength="2" maxlength="32" placeholder="Votre nom de famille"><br>
 
                 <br><label for="firstname-id">Prénom *</label>
-                <input type="text" id="firstname-id" name="firstname" required maxlength="32"><br>
+                <input type="text" id="firstname-id" name="firstname" required minlength="2" maxlength="32" placeholder="Votre prénom"><br>
 
                 <br><label for="email-id">Adresse email *</label>
-                <input type="email" id="email-id" name="email" required maxlength="50"><br>
+                <input type="email" id="email-id" name="email" required minlength="15" maxlength="50" placeholder="Votre e-mail"><br>
 
                 <br><label for="adress-id">Adresse </label>
-                <input type="text" id="adress-id" name="adress" maxlength="36"><br>
+                <input type="text" id="adress-id" name="adress" minlength="10" maxlength="36" placeholder="Votre adresse"><br>
 
                 <br><label for="lieu-id">Lieu </label>
-                <input type="text" id="lieu-id" name="lieu" maxlength="40"><br>
+                <input type="text" id="lieu-id" name="lieu" minlength="2" maxlength="40" placeholder="Votre ville ou village"><br>
 
                 <br><label for="npa-id">N° postale (NPA) </label>
-                <input type="text" id="npa-id" name="npa" maxlength="10"><br>
+                <input type="text" id="npa-id" name="npa" minlength="2" maxlength="10" placeholder="Votre code postale"><br>
 
                 <br>--------------------------------------------------------------------
 
@@ -38,7 +40,7 @@
                     <option name="quantité" value="1">1x</option>
                     <option name="quantité" value="2">2x</option>
                 </select>
-                <br><input type="radio" name="quantité" value="d">Quantité personnalisé <input type="number" min="3" max="10"><br>
+                <br><input type="radio" name="quantité" value="d">Quantité personnalisé <input type="number" min="3" max="10" placeholder="3-10"><br>
 
                 <br>--------------------------------------------------------------------
 
@@ -50,7 +52,7 @@
 
                 <label for="message-id"></label>
                 <br><br><br>Message (optionnel)
-                <br><textarea rows="10" cols="50" id="message-id" name="message" maxlength="510"></textarea>
+                <br><textarea rows="10" cols="50" id="message-id" name="message" maxlength="510" placeholder="Rédigez votre avis ici..."></textarea>
 
                 <br><br><br><input type="checkbox" name="conditionsgénérales[]" value="conditionsgénérales" required> J'accepte les conditions générales *
 
